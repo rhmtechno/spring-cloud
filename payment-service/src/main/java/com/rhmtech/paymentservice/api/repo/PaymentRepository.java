@@ -6,4 +6,6 @@ import com.rhmtech.paymentservice.api.model.Payment;
 
 public interface PaymentRepository extends JpaRepository<Payment, Integer> {
 
+	Payment findByOrderId(int orderId);
+
 }
